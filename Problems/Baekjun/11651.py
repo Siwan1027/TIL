@@ -14,7 +14,7 @@ for i in range(n):
     coors[i] = list(map(int, sys.stdin.readline().split()))
 
 # python sort() 메소드는 기본적으로 [0][0]의 값과 [1][0]의 값이 같은 경우 [0][1]의 값과 [1][1]의 값을 비교하여 오름차순 정렬
-# lambda
+# lambda y 값 기준으로 sort 적용
 coors.sort(key = lambda x : (x[1], x[0]))
 
 for i in coors:
