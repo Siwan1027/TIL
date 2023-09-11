@@ -16,3 +16,4 @@ for i in range(T):
     rp = C//p
     C -= rp*p
     print(f'{rq} {rd} {rn} {rp}')
+    
