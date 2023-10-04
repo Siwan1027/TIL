@@ -113,3 +113,18 @@ nums.a = 9;
 console.log(nums.sum);
 console.log(nums.sum);
 console.log(nums.sum);
+
+// 
+
+
+function biggerThanThree(numbers){
+    let result = []
+    for (let i = 0; i < numbers.length; i++){
+        if (i>3){
+            result.push(i);
+        }
+    }
+}
+
+const numList = [1,2,3,4,5,6,7];
+console.log(biggerThanThree(numList));

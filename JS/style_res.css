@@ -1,0 +1,8 @@
+/* media 태그에 조건을 추가함으로써 반응형으로 생성 가능 */
+@media(min-width: 800px){
+    div{
+        border: 10px green solid;
+        font-size: 60px;
+        text-align: center;
+    }
+}

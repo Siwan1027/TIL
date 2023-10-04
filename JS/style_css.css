@@ -1,0 +1,30 @@
+h1{
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 1px gray solid;
+    margin: 0px;
+    padding: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+#grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    
+}
+
+.index_html{
+color: rgb(110, 132, 151)
+}
+.index_css{
+    color: skyblue
+}
+.index_js{
+    color: aqua
+}
+.active{
+    color: darkgreen;
+}
