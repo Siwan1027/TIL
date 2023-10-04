@@ -1,14 +1,36 @@
+const body = {
+    setColor: function(color){
+        document.querySelector('body').style.color = color;
+    },
+    setBgColor:function(color){
+        document.querySelector('body').style.backgroundColor = color;
+    }
+}
 function modeHandler(self) {
     const target = document.querySelector('body');
     const mode = ['day', 'night'];
+    
     if (self.value === 'day') {
-        target.style.backgroundColor = 'black';
-        target.style.color = 'white';
+        body.setBgColor('black')
+        body.setColor('white')
+        setColor('powderblue');
         self.value = mode[1];
     }
     else {
-        target.style.backgroundColor = 'white';
-        target.style.color = 'black';
+        body.setBgColor('white')
+        body.setColor('black')
+        setColor('blue');
         self.value = mode[0];
     }
 }
+function setColor(color) {
+    const alist = document.querySelectorAll('a');
+    let i = 0;
+    while(i<alist.length) {
+        alist[i].style.color = color;
+        i = i+1;
+    }
+}
+
+
+
