@@ -6,14 +6,17 @@ input = sys.stdin.readline
 
 n = int(input())
 nums = []
+result = 1
 for _ in range(n):
     nums.append(int(input()))
 t = int(input())
 for _ in range(t):
     s, e = map(int,input().strip().split())
-    if len(nums[s:e]) == 1:
+    t_nums = nums[s:e]
+    if len(t_nums) == 1:
         print(1)
-    if len(nums[s:e]) > 1:
-        for _ in range(len(nums[s:e])):
-            t_nums = nums[s:e]
-            t_nums[_]
+    else:
+        for i in range(len(t_nums)):
+            if t_nums[i] != t_nums[-i]:
+                result = 0
+    
