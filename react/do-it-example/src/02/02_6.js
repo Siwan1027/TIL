@@ -1,4 +1,4 @@
-//  learn ES6 class
+//  learn before ES6 define class
 
 function Shape(x, y) {
   this.name = 'Shape';
@@ -30,3 +30,25 @@ Shape.prototype = {
 };
 let s = new Shape(0, 0);
 s.area();
+
+// how to define class in ES6
+
+class Shape {
+  static create(x, y) {
+    return new Shape(x, y);
+  }
+  name = 'Shape';
+  constructor(x, y) {
+    this.move(x, y);
+  }
+  move(x, y) {
+    this.x = x;
+    this.y = y;
+  }
+  area() {
+    return 0;
+  }
+}
+
+var ss = new Shape(0, 0);
+ss.area();

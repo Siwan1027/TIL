@@ -24,12 +24,14 @@ function modeHandler(self) {
     }
 }
 function setColor(color) {
-    const alist = document.querySelectorAll('a');
-    let i = 0;
-    while(i<alist.length) {
-        alist[i].style.color = color;
-        i = i+1;
-    }
+    // jquery 적용 전 코드
+    // const alist = document.querySelectorAll('a');
+    // let i = 0;
+    // while(i<alist.length) {
+    //     alist[i].style.color = color;
+    //     i = i+1;
+    // }
+    $('a').css('color', color)
 }
 
 
